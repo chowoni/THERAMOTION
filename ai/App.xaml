@@ -1,0 +1,13 @@
+﻿<Application x:Class="ai.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ai"
+             StartupUri="start.xaml">
+    <Application.Resources>
+        <FontFamily x:Key="Pretendard-Black">font/#Pretendard-Black</FontFamily>
+        <FontFamily x:Key="Pretendard-Bold">font/#Pretendard-Bold</FontFamily>
+        <FontFamily x:Key="Pretendard-SemiBold">font/#Pretendard-SemiBold</FontFamily>
+        <FontFamily x:Key="Pretendard-Medium">font/#Pretendard-Medium</FontFamily>
+        
+    </Application.Resources>
+</Application>

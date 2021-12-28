@@ -1,0 +1,178 @@
+﻿<Window x:Class="ai.Page3_1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ai"
+        mc:Ignorable="d"
+        Title="Page3_1" Height="1920" Width="1080" WindowStyle="None" WindowState="Maximized">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource= "/res/bg.png" AlignmentY="Top" AlignmentX="Center"/>
+        </Grid.Background>
+
+        <Grid Margin="30,466,30,0" VerticalAlignment="Top">
+
+            <Image Source="/res/m1/wBG.png" Stretch="Fill" Height="800" VerticalAlignment="Center"/>
+            <Image Margin="757,62,0,0" Source="/res/m1/yes.png" Stretch="Fill" HorizontalAlignment="Left" Width="75" Height="35" VerticalAlignment="Top"/>
+            <Image Margin="873,62,0,0" Source="/res/m1/no.png" Stretch="Fill" HorizontalAlignment="Left" Width="76" Height="35" VerticalAlignment="Top"/>
+
+            <Image Margin="52,104,0,0" Source="/res/m1/lBG.png" Stretch="Fill" HorizontalAlignment="Left" Width="654" Height="76" VerticalAlignment="Top"/>
+            <Image Margin="737,104,0,0" Source="/res/m1/bt_ok_n.png" Stretch="Fill" HorizontalAlignment="Left" Width="108" Height="74" VerticalAlignment="Top"/>
+            <Image Margin="861,104,0,0" Source="/res/m1/bt_ok_n.png" Stretch="Fill" HorizontalAlignment="Left" Width="108" Height="74" VerticalAlignment="Top"/>
+
+            <Image Margin="52,196,0,0" Source="/res/m1/lBG.png" Stretch="Fill" HorizontalAlignment="Left" Width="654" Height="76" VerticalAlignment="Top"/>
+            <Image Margin="737,196,0,0" Source="/res/m1/bt_ok_n.png" Stretch="Fill" HorizontalAlignment="Left" Width="108" Height="74" VerticalAlignment="Top"/>
+            <Image Margin="861,196,0,0" Source="/res/m1/bt_ok_n.png" Stretch="Fill" HorizontalAlignment="Left" Width="108" Height="74" VerticalAlignment="Top"/>
+
+            <Image Margin="52,288,0,0" Source="/res/m1/lBG.png" Stretch="Fill" HorizontalAlignment="Left" Width="654" Height="76" VerticalAlignment="Top"/>
+            <Image Margin="737,288,0,0" Source="/res/m1/bt_ok_n.png" Stretch="Fill" HorizontalAlignment="Left" Width="108" Height="74" VerticalAlignment="Top"/>
+            <Image Margin="861,288,0,0" Source="/res/m1/bt_ok_n.png" Stretch="Fill" HorizontalAlignment="Left" Width="108" Height="74" VerticalAlignment="Top"/>
+
+            <Image Margin="52,380,0,0" Source="/res/m1/lBG.png" Stretch="Fill" HorizontalAlignment="Left" Width="654" Height="76" VerticalAlignment="Top"/>
+            <Image Margin="737,380,0,0" Source="/res/m1/bt_ok_n.png" Stretch="Fill" HorizontalAlignment="Left" Width="108" Height="74" VerticalAlignment="Top"/>
+            <Image Margin="861,380,0,0" Source="/res/m1/bt_ok_n.png" Stretch="Fill" HorizontalAlignment="Left" Width="108" Height="74" VerticalAlignment="Top"/>
+
+            <Image Margin="52,472,0,0" Source="/res/m1/lBG.png" Stretch="Fill" HorizontalAlignment="Left" Width="654" Height="76" VerticalAlignment="Top"/>
+            <Image Margin="737,472,0,0" Source="/res/m1/bt_ok_n.png" Stretch="Fill" HorizontalAlignment="Left" Width="108" Height="74" VerticalAlignment="Top"/>
+            <Image Margin="861,472,0,0" Source="/res/m1/bt_ok_n.png" Stretch="Fill" HorizontalAlignment="Left" Width="108" Height="74" VerticalAlignment="Top"/>
+            <Image Margin="0,586,0,0" Source="/res/m1/line.png" Stretch="Fill" HorizontalAlignment="Center" Width="918" Height="1" VerticalAlignment="Top"/>
+        </Grid>
+
+        <Image Margin="30,272,30,0" Source="/res/res1.png" Stretch="Fill" Height="190" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="82,314,0,0" TextWrapping="Wrap" Text="1. 우울척도-단축형 (CESD-10-D)" VerticalAlignment="Top" Width="522" Height="44" FontFamily="Pretendard" FontSize="35" Foreground="#FF666666" FontWeight="Bold"/>
+        <TextBlock x:Name="realTime" HorizontalAlignment="Left" Margin="631,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366" Height="30" FontFamily="Pretendard" FontSize="25" Grid.ColumnSpan="3" Foreground="#FF666666" FontWeight="Bold" TextAlignment="Right"/>
+        <TextBlock x:Name="cnt_T" HorizontalAlignment="Left" Margin="950,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" Height="89" FontFamily="Pretendard" FontSize="28" Foreground="#FF8AC1C1" FontWeight="Bold" TextAlignment="Right" Text="/10"/>
+        <TextBlock x:Name="cnt" HorizontalAlignment="Left" Margin="910,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" Height="89" FontFamily="Pretendard" FontSize="28" Foreground="#FF8AC1C1" FontWeight="Bold" TextAlignment="Center" Text="00"/>
+
+        <Image x:Name="a1" Margin="90,569,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="642" Height="72" VerticalAlignment="Top"/>
+        <Image x:Name="a2" Margin="88,661,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="642" Height="72" VerticalAlignment="Top"/>
+        <Image x:Name="a3" Margin="88,753,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="642" Height="72" VerticalAlignment="Top"/>
+        <Image x:Name="a4" Margin="88,845,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="642" Height="72" VerticalAlignment="Top"/>
+        <Image x:Name="a5" Margin="88,937,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="642" Height="72" VerticalAlignment="Top"/>
+
+
+
+        <Grid x:Name="grey1" Margin="82,569,88,1272">
+            <Image x:Name="gT1" Stretch="Fill" Margin="692,4,124,12"/>
+            <Image x:Name="gF1" Stretch="Fill" Margin="816,4,0,12"/>
+            <Image x:Name="gL1" Margin="0,0,254,0" Stretch="Fill"/>
+        </Grid>
+
+        <Grid x:Name="Q1" HorizontalAlignment="Left" Height="61" Margin="118,577,0,0" VerticalAlignment="Top" Width="864">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="437*"/>
+                <ColumnDefinition Width="427*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock TextWrapping="Wrap" Foreground="#FF666666" FontFamily="Pretendard Medium" FontSize="32" VerticalAlignment="Top" Margin="0,10,0,0" HorizontalAlignment="Left" Width="572" Height="38" Grid.ColumnSpan="2"><Run Text="1. 비교적 잘 지냈다."/><Run Language="ko-kr" Text=" "/></TextBlock>
+            <RadioButton x:Name="F_1" RenderTransformOrigin="0.467,0.518" Click="QnA" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="363,1,0,0" HorizontalAlignment="Left" Checked="Q_1_Checked" Grid.Column="1" BorderThickness="00">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+            <RadioButton x:Name="T_1" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Margin="238,0,0,0" HorizontalAlignment="Left" Checked="Q_1_Checked" Grid.Column="1" BorderThickness="00">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+
+        </Grid>
+
+        <Grid x:Name="grey2" Margin="82,661,88,1180">
+            <Image x:Name="gT2" Stretch="Fill" Margin="692,4,124,12"/>
+            <Image x:Name="gF2" Stretch="Fill" Margin="816,4,0,12"/>
+            <Image x:Name="gL2" Margin="0,0,254,0" Stretch="Fill"/>
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" Height="57" Margin="118,668,0,0" VerticalAlignment="Top" Width="874">
+            <TextBlock TextWrapping="Wrap" Text="2. 상당히 우울했다." Foreground="#FF666666" FontFamily="Pretendard Medium" FontSize="32" VerticalAlignment="Top" Margin="0,10,0,0" HorizontalAlignment="Left" Width="572" Height="38"/>
+            <RadioButton x:Name="F_2" RenderTransformOrigin="0.467,0.518" Click="QnA" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="800,1,0,0" HorizontalAlignment="Left" Checked="Q_2_Checked" BorderThickness="00">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+            <RadioButton x:Name="T_2" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Margin="675,0,0,0" HorizontalAlignment="Left" Checked="Q_2_Checked" BorderThickness="00">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+        </Grid>
+
+        <Grid x:Name="grey3" Margin="82,751,88,1090">
+            <Image x:Name="gT3" Stretch="Fill" Margin="692,4,124,12"/>
+            <Image x:Name="gF3" Stretch="Fill" Margin="816,4,0,12"/>
+            <Image x:Name="gL3" Margin="0,0,254,0" Stretch="Fill"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="59" Margin="118,760,0,0" VerticalAlignment="Top" Width="864">
+            <TextBlock TextWrapping="Wrap" Text="3. 모든 일들이 힘들게 느껴졌다." Foreground="#FF666666" FontFamily="Pretendard Medium" FontSize="32" VerticalAlignment="Top" Margin="0,10,0,0" HorizontalAlignment="Left" Width="572" Height="38"/>
+            <RadioButton x:Name="F_3" RenderTransformOrigin="0.467,0.518" Click="QnA" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="800,1,0,0" HorizontalAlignment="Left" Checked="Q_3_Checked" BorderThickness="00">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+            <RadioButton x:Name="T_3" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Margin="675,0,0,0" HorizontalAlignment="Left" Checked="Q_3_Checked" BorderThickness="00">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+        </Grid>
+
+        <Grid x:Name="grey4" Margin="82,843,88,998">
+            <Image x:Name="gT4" Stretch="Fill" Margin="692,4,124,12"/>
+            <Image x:Name="gF4" Stretch="Fill" Margin="816,4,0,12"/>
+            <Image x:Name="gL4" Margin="0,0,254,0" Stretch="Fill"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="59" Margin="118,852,0,0" VerticalAlignment="Top" Width="864">
+            <TextBlock TextWrapping="Wrap" Text="4. 잠을 설쳤다.(잠을 잘 이루지 못했다.)" Foreground="#FF666666" FontFamily="Pretendard Medium" FontSize="32" VerticalAlignment="Top" Margin="0,10,0,0" HorizontalAlignment="Left" Width="572" Height="38"/>
+            <RadioButton x:Name="F_4" RenderTransformOrigin="0.467,0.518" Click="QnA" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="800,1,0,0" HorizontalAlignment="Left" Checked="Q_4_Checked" BorderThickness="00">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+            <RadioButton x:Name="T_4" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Margin="675,0,0,0" HorizontalAlignment="Left" Checked="Q_4_Checked" BorderThickness="00">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+
+        </Grid>
+
+        <Grid x:Name="grey5" Margin="82,937,88,904">
+            <Image x:Name="gT5" Stretch="Fill" Margin="692,4,124,12"/>
+            <Image x:Name="gF5" Stretch="Fill" Margin="816,4,0,12"/>
+            <Image x:Name="gL5" Margin="0,0,254,0" Stretch="Fill"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="65" Margin="118,944,0,0" VerticalAlignment="Top" Width="874">
+            <TextBlock TextWrapping="Wrap" Text="5. 세상에 홀로 있는 듯한 외로움을 느꼈다." Foreground="#FF666666" FontFamily="Pretendard Medium" FontSize="32" VerticalAlignment="Top" Margin="0,10,0,0" HorizontalAlignment="Left" Width="616" Height="38"/>
+            <RadioButton x:Name="F_5" RenderTransformOrigin="0.467,0.518" Click="QnA" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="800,1,0,0" HorizontalAlignment="Left" Checked="Q_5_Checked" BorderThickness="00">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+            <RadioButton x:Name="T_5" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Margin="675,0,0,0" HorizontalAlignment="Left" Checked="Q_5_Checked" BorderThickness="00">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+        </Grid>
+        <Image x:Name="C1T" Margin="791,576,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="60" Height="60" VerticalAlignment="Top"/>
+        <Image x:Name="C1F" Margin="916,576,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="60" Height="60" VerticalAlignment="Top"/>
+
+        <Image x:Name="C2T" Margin="791,668,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="60" Height="60" VerticalAlignment="Top"/>
+        <Image x:Name="C2F" Margin="916,668,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="60" Height="60" VerticalAlignment="Top"/>
+
+        <Image x:Name="C3T" Margin="791,760,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="60" Height="60" VerticalAlignment="Top"/>
+        <Image x:Name="C3F" Margin="916,760,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="60" Height="60" VerticalAlignment="Top"/>
+
+        <Image x:Name="C4T" Margin="791,852,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="60" Height="60" VerticalAlignment="Top"/>
+        <Image x:Name="C4F" Margin="916,852,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="60" Height="60" VerticalAlignment="Top"/>
+
+        <Image x:Name="C5T" Margin="791,944,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="60" Height="60" VerticalAlignment="Top"/>
+        <Image x:Name="C5F" Margin="916,944,0,0" Stretch="Fill" HorizontalAlignment="Left" Width="60" Height="60" VerticalAlignment="Top"/>
+
+        <Image Margin="837,1127,0,0" Source="/res/next.png" Stretch="Fill" HorizontalAlignment="Left" Width="186" Height="90" VerticalAlignment="Top"/>
+        <Button x:Name="next" Margin="0,1127,74,0" FontSize="35" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold Condensed" Height="77" Click="next_Click" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="White" Opacity="0" HorizontalAlignment="Right" Width="161" />
+        <Image Margin="75,390,0,0" Source="/res/m1/fill.png" Stretch="Fill" HorizontalAlignment="Left" Width="260" Height="16" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

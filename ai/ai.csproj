@@ -1,0 +1,306 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="font\Pretendard-Black.otf" />
+    <None Remove="font\Pretendard-Bold.otf" />
+    <None Remove="font\Pretendard-ExtraBold.otf" />
+    <None Remove="font\Pretendard-ExtraLight.otf" />
+    <None Remove="font\Pretendard-Light.otf" />
+    <None Remove="font\Pretendard-Medium.otf" />
+    <None Remove="font\Pretendard-Regular.otf" />
+    <None Remove="font\Pretendard-SemiBold.otf" />
+    <None Remove="img\bg.png" />
+    <None Remove="img\blank.png" />
+    <None Remove="img\btn.png" />
+    <None Remove="img\camera.png" />
+    <None Remove="img\del.png" />
+    <None Remove="img\mo1.png" />
+    <None Remove="img\mo2.png" />
+    <None Remove="img\n1.png" />
+    <None Remove="img\n2.png" />
+    <None Remove="img\n3.png" />
+    <None Remove="img\num0.png" />
+    <None Remove="img\num010.png" />
+    <None Remove="img\num1.png" />
+    <None Remove="img\num2.png" />
+    <None Remove="img\num3.png" />
+    <None Remove="img\num4.png" />
+    <None Remove="img\num5.png" />
+    <None Remove="img\num6.png" />
+    <None Remove="img\num7.png" />
+    <None Remove="img\num8.png" />
+    <None Remove="img\num9.png" />
+    <None Remove="img\그룹 13581.png" />
+    <None Remove="res\bg.png" />
+    <None Remove="res\bg2.png" />
+    <None Remove="res\border.png" />
+    <None Remove="res\btn0.png" />
+    <None Remove="res\checked.png" />
+    <None Remove="res\exp\n1.png" />
+    <None Remove="res\exp\n2.png" />
+    <None Remove="res\exp\n3.png" />
+    <None Remove="res\exp\t1.png" />
+    <None Remove="res\exp\t2.png" />
+    <None Remove="res\exp\t3.png" />
+    <None Remove="res\exp\wBG.png" />
+    <None Remove="res\face\bg.png" />
+    <None Remove="res\face\face1.png" />
+    <None Remove="res\face\face2.png" />
+    <None Remove="res\face\face3.png" />
+    <None Remove="res\face\face4.png" />
+    <None Remove="res\face\gBG.png" />
+    <None Remove="res\face\guide_f.png" />
+    <None Remove="res\face\reBTN.png" />
+    <None Remove="res\face\reBTN_G.png" />
+    <None Remove="res\face\text-bg.png" />
+    <None Remove="res\ff.png" />
+    <None Remove="res\fill.png" />
+    <None Remove="res\m1\bt_ok_n.png" />
+    <None Remove="res\m1\fill.png" />
+    <None Remove="res\m1\lBG.png" />
+    <None Remove="res\m1\line.png" />
+    <None Remove="res\m1\no.png" />
+    <None Remove="res\m1\wBG.png" />
+    <None Remove="res\m1\yes.png" />
+    <None Remove="res\m2\a2.png" />
+    <None Remove="res\m2\a3.png" />
+    <None Remove="res\m2\a4.png" />
+    <None Remove="res\m2\a5.png" />
+    <None Remove="res\m2\lBG.png" />
+    <None Remove="res\m2\line.png" />
+    <None Remove="res\m2\wBG.png" />
+    <None Remove="res\m3\a1.png" />
+    <None Remove="res\m3\a2.png" />
+    <None Remove="res\m3\a3.png" />
+    <None Remove="res\m3\a4.png" />
+    <None Remove="res\m3\a5.png" />
+    <None Remove="res\m3\gBG.png" />
+    <None Remove="res\m3\ic_ok_48.png" />
+    <None Remove="res\m3\lBG.png" />
+    <None Remove="res\m3\line.png" />
+    <None Remove="res\m3\T3_border.png" />
+    <None Remove="res\m3\wBG.png" />
+    <None Remove="res\next.png" />
+    <None Remove="res\nextBTN.png" />
+    <None Remove="res\previous.png" />
+    <None Remove="res\res0.png" />
+    <None Remove="res\res1.png" />
+    <None Remove="res\res2.png" />
+    <None Remove="res\res3.png" />
+    <None Remove="res\res4.png" />
+    <None Remove="res\S.png" />
+    <None Remove="res\startBG.png" />
+    <None Remove="res\startBTN.png" />
+    <None Remove="res\str\bg.png" />
+    <None Remove="res\str\cnt_bg.png" />
+    <None Remove="res\str\cnt_bg2.png" />
+    <None Remove="res\str\cnt_loading.png" />
+    <None Remove="res\str\cnt_loadingC.png" />
+    <None Remove="res\str\guide1.png" />
+    <None Remove="res\str\guide2.png" />
+    <None Remove="res\str\guide3.png" />
+    <None Remove="res\str\guide_bg.png" />
+    <None Remove="res\str\point.png" />
+    <None Remove="res\str\pos_txt.png" />
+    <None Remove="res\str\rdBG.png" />
+    <None Remove="res\str\ready.png" />
+    <None Remove="res\str\res.png" />
+    <None Remove="res\str\res1.png" />
+    <None Remove="res\str\res2.png" />
+    <None Remove="res\str\res3.png" />
+    <None Remove="res\str\res4.png" />
+    <None Remove="res\str\res5.png" />
+    <None Remove="res\str\text-bg2.png" />
+    <None Remove="res\str\text_bg.png" />
+    <None Remove="res\str\txt0.png" />
+    <None Remove="res\str\txt1.png" />
+    <None Remove="res\str\txt2.png" />
+    <None Remove="res\str\txt3.png" />
+    <None Remove="res\str\wBG.png" />
+    <None Remove="res\T2_bg.png" />
+    <None Remove="res\T2_border.png" />
+    <None Remove="res\T2_Cbg.png" />
+    <None Remove="res\T2_query.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\bg.png" />
+    <Resource Include="img\btn.png" />
+    <Resource Include="img\del.png" />
+    <Resource Include="img\mo1.png" />
+    <Resource Include="img\mo2.png" />
+    <Resource Include="img\num0.png" />
+    <Resource Include="img\num010.png" />
+    <Resource Include="img\num1.png" />
+    <Resource Include="img\num2.png" />
+    <Resource Include="img\num3.png" />
+    <Resource Include="img\num4.png" />
+    <Resource Include="img\num5.png" />
+    <Resource Include="img\num6.png" />
+    <Resource Include="img\num7.png" />
+    <Resource Include="img\num8.png" />
+    <Resource Include="img\num9.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\blank.png" />
+    <Resource Include="img\그룹 13581.png" />
+    <Resource Include="res\fill.png" />
+    <Resource Include="res\str\bg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="res\str\point.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="res\bg2.png" />
+    <Resource Include="res\exp\n1.png" />
+    <Resource Include="res\exp\n2.png" />
+    <Resource Include="res\exp\n3.png" />
+    <Resource Include="res\exp\t1.png" />
+    <Resource Include="res\exp\t2.png" />
+    <Resource Include="res\exp\t3.png" />
+    <Resource Include="res\exp\wBG.png" />
+    <Resource Include="res\face\bg.png" />
+    <Resource Include="res\face\face1.png" />
+    <Resource Include="res\face\face2.png" />
+    <Resource Include="res\face\face3.png" />
+    <Resource Include="res\face\face4.png" />
+    <Resource Include="res\face\gBG.png" />
+    <Resource Include="res\face\guide_f.png" />
+    <Resource Include="res\face\reBTN.png" />
+    <Resource Include="res\face\reBTN_G.png" />
+    <Resource Include="res\face\text-bg.png" />
+    <Resource Include="res\ff.png" />
+    <Resource Include="res\m3\a1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="res\m1\bt_ok_n.png" />
+    <Resource Include="res\m1\fill.png" />
+    <Resource Include="res\m1\lBG.png" />
+    <Resource Include="res\m1\line.png" />
+    <Resource Include="res\m1\wBG.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="res\border.png" />
+    <Resource Include="res\checked.png" />
+    <Resource Include="res\m1\no.png" />
+    <Resource Include="res\m1\yes.png" />
+    <Resource Include="res\m2\a2.png" />
+    <Resource Include="res\m2\a3.png" />
+    <Resource Include="res\m2\a4.png" />
+    <Resource Include="res\m2\a5.png" />
+    <Resource Include="res\m2\lBG.png" />
+    <Resource Include="res\m2\line.png" />
+    <Resource Include="res\m2\wBG.png" />
+    <Resource Include="res\m3\a2.png" />
+    <Resource Include="res\m3\a3.png" />
+    <Resource Include="res\m3\a4.png" />
+    <Resource Include="res\m3\a5.png" />
+    <Resource Include="res\m3\gBG.png" />
+    <Resource Include="res\m3\ic_ok_48.png" />
+    <Resource Include="res\m3\lBG.png" />
+    <Resource Include="res\m3\line.png" />
+    <Resource Include="res\m3\T3_border.png" />
+    <Resource Include="res\m3\wBG.png" />
+    <Resource Include="res\next.png" />
+    <Resource Include="res\nextBTN.png" />
+    <Resource Include="res\previous.png" />
+    <Resource Include="res\reBTN.png" />
+    <Resource Include="res\reBTN_G.png" />
+    <Resource Include="res\res2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="font\Pretendard-ExtraLight.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="font\Pretendard-Black.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="font\Pretendard-Bold.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="font\Pretendard-ExtraBold.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="font\Pretendard-Light.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="font\Pretendard-Medium.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="font\Pretendard-Regular.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="font\Pretendard-SemiBold.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\n2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\n1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenCvSharp4" Version="4.5.3.20210817" />
+    <PackageReference Include="OpenCvSharp4.Windows" Version="4.5.3.20210817" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\camera.png" />
+    <Resource Include="img\n3.png" />
+    <Resource Include="res\bg.png" />
+    <Resource Include="res\btn0.png" />
+    <Resource Include="res\res0.png" />
+    <Resource Include="res\res1.png" />
+    <Resource Include="res\res3.png" />
+    <Resource Include="res\res4.png" />
+    <Resource Include="res\S.png" />
+    <Resource Include="res\startBG.png" />
+    <Resource Include="res\startBTN.png" />
+    <Resource Include="res\str\cnt_bg.png" />
+    <Resource Include="res\str\cnt_bg2.png" />
+    <Resource Include="res\str\cnt_loading.png" />
+    <Resource Include="res\str\cnt_loadingC.png" />
+    <Resource Include="res\str\guide1.png" />
+    <Resource Include="res\str\guide2.png" />
+    <Resource Include="res\str\guide3.png" />
+    <Resource Include="res\str\guide_bg.png" />
+    <Resource Include="res\str\pos_txt.png" />
+    <Resource Include="res\str\rdBG.png" />
+    <Resource Include="res\str\ready.png" />
+    <Resource Include="res\str\res.png" />
+    <Resource Include="res\str\res1.png" />
+    <Resource Include="res\str\res2.png" />
+    <Resource Include="res\str\res3.png" />
+    <Resource Include="res\str\res4.png" />
+    <Resource Include="res\str\res5.png" />
+    <Resource Include="res\str\text-bg2.png" />
+    <Resource Include="res\str\text_bg.png" />
+    <Resource Include="res\str\txt0.png" />
+    <Resource Include="res\str\txt1.png" />
+    <Resource Include="res\str\txt2.png" />
+    <Resource Include="res\str\txt3.png" />
+    <Resource Include="res\str\wBG.png" />
+    <Resource Include="res\T2_bg.png" />
+    <Resource Include="res\T2_border.png" />
+    <Resource Include="res\T2_Cbg.png" />
+    <Resource Include="res\T2_query.png" />
+  </ItemGroup>
+
+</Project>
