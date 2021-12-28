@@ -25,8 +25,8 @@ namespace ai
 
         public Page11_1()
         {
-            InitializeCamera();
             InitializeComponent();
+            InitializeCamera();
             realTime.Text = DateTime.Now.ToString("yyyy-MM-dd tt HH:mm");
         }
 

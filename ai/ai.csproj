@@ -95,7 +95,6 @@
     <None Remove="res\res2.png" />
     <None Remove="res\res3.png" />
     <None Remove="res\res4.png" />
-    <None Remove="res\res5.png" />
     <None Remove="res\S.png" />
     <None Remove="res\startBG.png" />
     <None Remove="res\startBTN.png" />
@@ -154,7 +153,6 @@
     <Resource Include="img\blank.png" />
     <Resource Include="img\그룹 13581.png" />
     <Resource Include="res\fill.png" />
-    <Resource Include="res\res5.png" />
     <Resource Include="res\str\bg.png" />
   </ItemGroup>
 

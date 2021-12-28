@@ -8,7 +8,7 @@
         Title="Page11_2" Height="1920" Width="1080" WindowStyle="None" WindowState="Maximized">
     <Grid>
         <Grid.Background>
-            <ImageBrush Stretch="UniformToFill" ImageSource= "/res/res5.png" AlignmentY="Top" AlignmentX="Center"/>
+            <ImageBrush Stretch="UniformToFill" ImageSource= "/res/bg2.png" AlignmentY="Top" AlignmentX="Center"/>
         </Grid.Background>
 
         <Image Margin="30,272,30,0" Source="/res/res1.png" Stretch="Fill" Height="190" VerticalAlignment="Top" Grid.ColumnSpan="3"/>

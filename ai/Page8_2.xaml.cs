@@ -16,35 +16,30 @@ namespace ai
     /// </summary>
     public partial class Page8_2 : System.Windows.Window
     {
-        VideoCapture capCamera;
-        WriteableBitmap wb;
-        bool loop = false;
-
+        private VideoCapture capCamera;
         DispatcherTimer timer = new DispatcherTimer();
+
         Mat matImage = new Mat();
 
         MainWindow main = new MainWindow();
-
         public Page8_2()
         {
             InitializeComponent();
             InitializeCamera();
-
             realTime.Text = DateTime.Now.ToString("yyyy-MM-dd tt HH:mm");
         }
 
         private void InitializeCamera()
         {
-            capCamera = VideoCapture.FromCamera(0);
+            capCamera = new VideoCapture(1);
+
             ready();
         }
 
         private void ready()
         {
-            new Thread(PlayCamera).Start();
-
             //음성 출력
-
+            new Thread(PlayCamera).Start();
             img.Source = new BitmapImage(new Uri(@"/img/n3.png", UriKind.Relative));
 
             timer.Interval = TimeSpan.FromMilliseconds(1000);
@@ -73,7 +68,7 @@ namespace ai
         }
         private void Timer_Tick0(object sender, System.EventArgs e)
         {
-            int num = 3;
+            int num = 1;
             timer.Stop();
 
             //캡쳐 함수 호출
@@ -82,12 +77,11 @@ namespace ai
 
         private void PlayCamera()
         {
-            loop = true;
-            while (loop)
+            while (!capCamera.IsDisposed)
             {
                 capCamera.Read(matImage); // same as cvQueryFrame
                 if (matImage.Empty()) break;
-
+                //Thread.Sleep(sleepTime);
                 Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() =>
                 {
                     var converted = Convert(BitmapConverter.ToBitmap(matImage));
@@ -110,7 +104,7 @@ namespace ai
 
         private void next_Click(object sender, RoutedEventArgs e)
         {
-            loop = false;
+            capCamera.Dispose();
 
             ai.Page8_3 ChangeWInow = new ai.Page8_3();
 
@@ -121,6 +115,7 @@ namespace ai
         {
             MessageBox.Show("재촬영을 시작합니다.");
             Thread.Sleep(1000);
+
             restart.IsEnabled = false;
 
             ready();

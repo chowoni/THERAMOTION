@@ -1,21 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Windows.Threading;
-using System.IO;
 using System.Drawing;
+using System.IO;
 using System.Threading;
+using System.Windows;
+using System.Windows.Media.Imaging;
+using System.Windows.Threading;
+
 using OpenCvSharp;
 using OpenCvSharp.Extensions;
 
@@ -26,11 +16,9 @@ namespace ai
     /// </summary>
     public partial class Page8_1 : System.Windows.Window
     {
-        VideoCapture capCamera;
-        WriteableBitmap wb;
-        bool loop = false;
-
+        private VideoCapture capCamera;
         DispatcherTimer timer = new DispatcherTimer();
+
         Mat matImage = new Mat();
 
         MainWindow main = new MainWindow();
@@ -39,22 +27,20 @@ namespace ai
         {
             InitializeComponent();
             InitializeCamera();
-
             realTime.Text = DateTime.Now.ToString("yyyy-MM-dd tt HH:mm");
         }
 
         private void InitializeCamera()
         {
-            capCamera = VideoCapture.FromCamera(0);
+            capCamera = new VideoCapture(1);
+
             ready();
         }
 
         private void ready()
         {
-            new Thread(PlayCamera).Start();
-
             //음성 출력
-
+            new Thread(PlayCamera).Start();
             img.Source = new BitmapImage(new Uri(@"/img/n3.png", UriKind.Relative));
 
             timer.Interval = TimeSpan.FromMilliseconds(1000);
@@ -83,21 +69,26 @@ namespace ai
         }
         private void Timer_Tick0(object sender, System.EventArgs e)
         {
-            int num = 3;
+            int num = 0;
             timer.Stop();
 
             //캡쳐 함수 호출
             main.capture_Img(num, capCamera, matImage);
         }
 
+        private void capture_Img() //캡쳐, 저장
+        {
+            string save_name = DateTime.Now.ToString("yyyy-MM-dd-hh시mm분ss초");
+            matImage.SaveImage(@"C:\Users\Kwon Cho Won\Desktop\capImg\" + save_name + "_smile.jpg");
+        }
+
         private void PlayCamera()
         {
-            loop = true;
-            while (loop)
+            while (!capCamera.IsDisposed)
             {
                 capCamera.Read(matImage); // same as cvQueryFrame
                 if (matImage.Empty()) break;
-
+                //Thread.Sleep(sleepTime);
                 Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() =>
                 {
                     var converted = Convert(BitmapConverter.ToBitmap(matImage));
@@ -105,7 +96,6 @@ namespace ai
                 }));
             }
         }
-
         public BitmapImage Convert(Bitmap src)
         {
             MemoryStream ms = new MemoryStream();
@@ -120,7 +110,7 @@ namespace ai
 
         private void next_Click(object sender, RoutedEventArgs e)
         {
-            loop = false;
+            capCamera.Dispose();
 
             ai.Page8_2 ChangeWInow = new ai.Page8_2();
 
@@ -129,10 +119,13 @@ namespace ai
 
         private void restart_Click(object sender, RoutedEventArgs e)
         {
+            reImg.Source = new BitmapImage(new Uri(@"/res/reBTN_G.png", UriKind.Relative));
+
             MessageBox.Show("재촬영을 시작합니다.");
             Thread.Sleep(1000);
-            restart.IsEnabled = false;
 
+            restart.IsEnabled = false;
+           
             ready();
         }
     }

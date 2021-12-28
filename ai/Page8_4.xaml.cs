@@ -16,11 +16,9 @@ namespace ai
     /// </summary>
     public partial class Page8_4 : System.Windows.Window
     {
-        VideoCapture capCamera;
-        WriteableBitmap wb;
-        bool loop = false;
-
+        private VideoCapture capCamera;
         DispatcherTimer timer = new DispatcherTimer();
+
         Mat matImage = new Mat();
 
         MainWindow main = new MainWindow();
@@ -29,13 +27,12 @@ namespace ai
         {
             InitializeComponent();
             InitializeCamera();
-
             realTime.Text = DateTime.Now.ToString("yyyy-MM-dd tt HH:mm");
         }
 
         private void InitializeCamera()
         {
-            capCamera = VideoCapture.FromCamera(0);
+            capCamera = new VideoCapture(1);
             ready();
         }
 
@@ -82,12 +79,11 @@ namespace ai
 
         private void PlayCamera()
         {
-            loop = true;
-            while (loop)
+            while (!capCamera.IsDisposed)
             {
                 capCamera.Read(matImage); // same as cvQueryFrame
                 if (matImage.Empty()) break;
-
+                //Thread.Sleep(sleepTime);
                 Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() =>
                 {
                     var converted = Convert(BitmapConverter.ToBitmap(matImage));
@@ -110,7 +106,7 @@ namespace ai
 
         private void next_Click(object sender, RoutedEventArgs e)
         {
-            loop = false;
+            capCamera.Dispose();
 
             ai.Page9 ChangeWInow = new ai.Page9();
 
@@ -121,6 +117,7 @@ namespace ai
         {
             MessageBox.Show("재촬영을 시작합니다.");
             Thread.Sleep(1000);
+
             restart.IsEnabled = false;
 
             ready();
