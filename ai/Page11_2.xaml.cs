@@ -27,6 +27,8 @@ namespace ai
         {
             InitializeComponent();
             InitializeCamera();
+
+            next.IsEnabled = false;
             realTime.Text = DateTime.Now.ToString("yyyy-MM-dd tt HH:mm");
         }
 
@@ -44,27 +46,33 @@ namespace ai
 
             timer.Interval = TimeSpan.FromMilliseconds(1000);
 
+            cnt.Text = "3";
+
             timer.Tick += Timer_Tick3;
             timer.Start();
         }
         private void Timer_Tick3(object sender, System.EventArgs e)
         {
+            cnt.Text = "2";
             timer.Tick += Timer_Tick2;
             timer.Start();
         }
         private void Timer_Tick2(object sender, System.EventArgs e)
         {
+            cnt.Text = "1";
             timer.Tick += Timer_Tick1;
             timer.Start();
         }
 
         private void Timer_Tick1(object sender, System.EventArgs e)
         {
+            cnt.Text = "0";
             timer.Tick += Timer_Tick0;
             timer.Start();
         }
         private void Timer_Tick0(object sender, System.EventArgs e)
         {
+            next.IsEnabled = true;
             int num = 5;
             timer.Stop();
 

@@ -170,13 +170,5 @@ namespace ai
             else
                 txtBox.Text = txtBox.Text.Remove(txtBox.Text.Length - 1);
         }
-
-        /*
-private void txtBoxStyle()
-{
-   txtBox.MaxLength = 13;
-}
-*/
-
     }
 }

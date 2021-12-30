@@ -48,8 +48,7 @@ namespace ai
                     img.SaveImage(@"C:\Users\Kwon Cho Won\Desktop\capImg\" + save_name + "_kinnect(front).jpg");
                     break;
                 case 5:
-                    tmp = save_name + "_kinnect(side).jpg";
-                    img.SaveImage(@"C:\Users\Kwon Cho Won\Desktop\capImg\" + tmp);
+                    img.SaveImage(@"C:\Users\Kwon Cho Won\Desktop\capImg\" + save_name + "_kinnect(side).jpg");
                     break;
             }
 

@@ -8,7 +8,7 @@
         Title="Page11_2" Height="1920" Width="1080" WindowStyle="None" WindowState="Maximized">
     <Grid>
         <Grid.Background>
-            <ImageBrush Stretch="UniformToFill" ImageSource= "/res/bg2.png" AlignmentY="Top" AlignmentX="Center"/>
+            <ImageBrush Stretch="UniformToFill" ImageSource= "/res/str/bg.png" AlignmentY="Top" AlignmentX="Center"/>
         </Grid.Background>
 
         <Image Margin="30,272,30,0" Source="/res/res1.png" Stretch="Fill" Height="190" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
@@ -28,7 +28,7 @@
         </Grid>
         <Image Margin="0,1707,0,0" Source="/res/str/text_bg.png" Stretch="Fill" HorizontalAlignment="Center" Width="1008" Height="91" VerticalAlignment="Top"/>
         <Image Margin="0,1729,0,0" Source="/res/str/txt2.png" Stretch="Fill" HorizontalAlignment="Center" Width="516" Height="41" VerticalAlignment="Top"/>
-        <Image x:Name="kinnect" HorizontalAlignment="Left" Height="1227" Margin="414,467,0,0" VerticalAlignment="Top" Width="599" Stretch="UniformToFill"/>
+        <Image x:Name="kinnect" HorizontalAlignment="Right" Height="1247" Margin="0,453,45,0" VerticalAlignment="Top" Width="693" Stretch="UniformToFill"/>
         <Image Margin="75,815,0,0" Source="/res/str/guide2.png" Stretch="Fill" HorizontalAlignment="Left" Width="222" Height="892" VerticalAlignment="Top"/>
 
         <Image Margin="0,603,186,0" Source="/res/str/guide3.png" Stretch="Fill" HorizontalAlignment="Right" Width="382" Height="1073" VerticalAlignment="Top"/>
@@ -38,5 +38,7 @@
 
         <Image x:Name="reImg" Margin="349,1084,0,0" Source="/res/face/reBTN.png" Stretch="Fill" HorizontalAlignment="Left" Width="162" Height="66" VerticalAlignment="Top"/>
         <Button x:Name="restart" Margin="0,1084,569,0" FontSize="35" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold Condensed" Height="66" Click="restart_Click" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="White" Opacity="0" HorizontalAlignment="Right" Width="162" />
+        <TextBlock x:Name="cnt" Margin="172,535,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" FontFamily="Pretendard" FontWeight="Bold" FontSize="50" Foreground="#FF7B7B7B" TextAlignment="Center" HorizontalAlignment="Left" Width="45"/>
+        <Run Language="ko-kr" Text="3"/>
     </Grid>
 </Window>

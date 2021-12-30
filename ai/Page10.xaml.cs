@@ -26,7 +26,7 @@ namespace ai
 
         private void next_Click(object sender, RoutedEventArgs e)
         {
-            ai.start ChangeWInow = new ai.start();
+            ai.Page11_1 ChangeWInow = new ai.Page11_1();
 
             ChangeWInow.Show();
         }
