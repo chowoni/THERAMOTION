@@ -20,6 +20,8 @@ namespace ai
     /// </summary>
     public partial class start : Window
     {
+        utility.DBClient db = new utility.DBClient(); 
+
         public start()
         {
             InitializeComponent();
@@ -81,6 +83,9 @@ namespace ai
                 file.WriteLine("");
                 file.WriteLine("UserSN : " + tb.Text);
             }
+            
+            //DB
+            db.InputUserInfo(tb.Text, DateTime.Now, "3M");
         }
 
         private void num010_Click(object sender, RoutedEventArgs e)

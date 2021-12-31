@@ -11,7 +11,10 @@
             <ImageBrush Stretch="UniformToFill" ImageSource= "/res/bg2.png" AlignmentY="Top" AlignmentX="Center"/>
         </Grid.Background>
 
-        <Image Margin="30,466,30,0" Source="/res/res4.png" Stretch="Fill" Height="800" VerticalAlignment="Top"/>
+        <Image Margin="30,466,30,0" Source="/res/str/wBG.png" Stretch="Fill" Height="800" VerticalAlignment="Top"/>
+        <Image Margin="490,584,490,0" Source="/res/str/res4.png" Stretch="Fill" Height="101" VerticalAlignment="Top"/>
+        <Image Margin="275,752,275,0" Source="/res/str/res2.png" Stretch="Fill" Height="51" VerticalAlignment="Top"/>
+        <Image Margin="0,1032,45,0" Source="/res/str/res6.png" Stretch="Fill" Height="62" VerticalAlignment="Top" HorizontalAlignment="Right" Width="998"/>
 
         <Image Margin="30,272,30,0" Source="/res/res1.png" Stretch="Fill" Height="190" VerticalAlignment="Top" Grid.ColumnSpan="3"/>
         <TextBlock HorizontalAlignment="Left" Margin="82,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="490" Height="44" FontFamily="Pretendard" FontSize="35" Foreground="#FF666666" FontWeight="Bold" Text="2. 감정 표현(Expression)"/>
@@ -19,7 +22,9 @@
         <TextBlock HorizontalAlignment="Left" Margin="903,375,0,0" TextWrapping="Wrap" Text="04/04" VerticalAlignment="Top" Width="93" Height="89" FontFamily="Pretendard" FontSize="28" Foreground="#FF8AC1C1" FontWeight="Bold" TextAlignment="Right" Grid.Column="2"/>
 
         <Image Margin="76,390,182,1514" Source="/res/ff.png" Stretch="Fill"/>
-        <Button x:Name="next" Margin="0,1135,381,0" Click="next_Click" BorderBrush="{x:Null}" Height="70" VerticalAlignment="Top" HorizontalAlignment="Right" Width="328" Background="White" Foreground="{x:Null}" Opacity="0" />
-
+        <Image Margin="370,1127,370,0" Source="/res/nextBTN.png" Stretch="Fill" Height="80" VerticalAlignment="Top"/>
+        <Button x:Name="next" Margin="0,1127,380,0" Click="next_Click" BorderBrush="{x:Null}" Height="70" VerticalAlignment="Top" HorizontalAlignment="Right" Width="328" Background="White" Foreground="{x:Null}" Opacity="0" />
+        <TextBlock HorizontalAlignment="Center" Margin="0,707,0,0" TextWrapping="Wrap" Text="'감정표현 콘텐츠'를 진행하시느라" VerticalAlignment="Top" Width="996" Height="34" FontFamily="Pretendard Medium" FontSize="30" Foreground="#FF444444" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,841,0,0" TextWrapping="Wrap" Width="996" LineHeight="50" FontFamily="Pretendard Medium" FontSize="30" Foreground="#FF444444" TextAlignment="Center" Height="134" VerticalAlignment="Top" FontWeight="Normal"><Run Text="해당 콘텐츠는 단순히 감정표현을 위한 안면운동 목적 이외에도  AI분석을"/><LineBreak/><Run Language="ko-kr" Text="통해 표정을 바탕으로 스트레스나 우울과 같은 정신건강 상태를 유추하여"/><LineBreak/><Run Language="ko-kr" Text="손쉽게 정신건강 관리를 제공받으실 수 있도록 도움드릴 예정입니다."/></TextBlock>
     </Grid>
 </Window>

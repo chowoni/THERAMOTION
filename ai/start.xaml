@@ -117,6 +117,50 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <SolidColorBrush x:Key="TextBox.Static.Border" Color="White" Opacity="0"/>
+        <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="White" Opacity="0"/>
+        <SolidColorBrush x:Key="TextBox.Focus.Border" Color="White" Opacity="0"/>
+        <Style x:Key="txtbox" TargetType="{x:Type TextBox}">
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource TextBox.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="AllowDrop" Value="true"/>
+            <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.Focus.Border}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                        <Condition Property="IsSelectionActive" Value="false"/>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="SelectionBrush" Value="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}"/>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
     </Window.Resources>
     <Grid>
         <Grid.Background>
@@ -125,7 +169,10 @@
         <Image Margin="30,272,30,495" Source="/res/m3/wBG.png" Stretch="Fill"/>
         <Image Margin="490,316,490,0" Source="/img/그룹 13581.png" Stretch="Fill" Height="100" VerticalAlignment="Top"/>
         <Image Source="/img/blank.png" Stretch="Fill" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left" Width="500" Margin="299,435,0,0"/>
-        <TextBox x:Name="txtBox"  Text="" FontSize="35" Width="478" Height="67" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" BorderBrush="{x:Null}" BorderThickness="1" TextChanged="txtBox_TextChanged" FontFamily="Pretendard" FontWeight="Bold" Foreground="#FF666666" Margin="310,441,0,0">
+        <TextBox Style="{DynamicResource txtbox}" x:Name="txtBox"  Text="" FontSize="35" Width="478" Height="67" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" BorderBrush="{x:Null}" BorderThickness="1" TextChanged="txtBox_TextChanged" FontFamily="Pretendard" FontWeight="Bold" Foreground="#FF666666" Margin="310,441,0,0">
+            <TextBox.SelectionBrush>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </TextBox.SelectionBrush>
             <TextBox.Background>
                 <SolidColorBrush Color="White" Opacity="0"/>
             </TextBox.Background>

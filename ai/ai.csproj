@@ -62,8 +62,10 @@
     <None Remove="res\face\reBTN.png" />
     <None Remove="res\face\reBTN_G.png" />
     <None Remove="res\face\text-bg.png" />
+    <None Remove="res\face\txt1.png" />
     <None Remove="res\ff.png" />
     <None Remove="res\fill.png" />
+    <None Remove="res\gBG.png" />
     <None Remove="res\m1\bt_ok_n.png" />
     <None Remove="res\m1\fill.png" />
     <None Remove="res\m1\lBG.png" />
@@ -108,6 +110,7 @@
     <None Remove="res\str\cnt_bg2.png" />
     <None Remove="res\str\cnt_loading.png" />
     <None Remove="res\str\cnt_loadingC.png" />
+    <None Remove="res\str\cnt_txt.png" />
     <None Remove="res\str\guide1.png" />
     <None Remove="res\str\guide2.png" />
     <None Remove="res\str\guide3.png" />
@@ -145,9 +148,12 @@
   <ItemGroup>
     <Resource Include="res\btn.png" />
     <Resource Include="res\disable.png" />
+    <Resource Include="res\face\txt1.png" />
+    <Resource Include="res\gBG.png" />
     <Resource Include="res\res5.png" />
     <Resource Include="res\res6.png" />
     <Resource Include="res\res7.png" />
+    <Resource Include="res\str\cnt_txt.png" />
     <Resource Include="res\str\res2.png" />
   </ItemGroup>
 
