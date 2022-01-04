@@ -39,6 +39,5 @@
         <Image x:Name="reImg" Margin="349,1084,0,0" Source="/res/face/reBTN.png" Stretch="Fill" HorizontalAlignment="Left" Width="162" Height="66" VerticalAlignment="Top"/>
         <Button x:Name="restart" Margin="0,1084,569,0" FontSize="35" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold Condensed" Height="66" Click="restart_Click" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="White" Opacity="0" HorizontalAlignment="Right" Width="162" />
         <TextBlock x:Name="cnt" Margin="172,535,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" FontFamily="Pretendard" FontWeight="Bold" FontSize="50" Foreground="#FF7B7B7B" TextAlignment="Center" HorizontalAlignment="Left" Width="45"/>
-        <Run Language="ko-kr" Text="3"/>
     </Grid>
 </Window>

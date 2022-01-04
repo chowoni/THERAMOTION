@@ -36,7 +36,6 @@ namespace ai.utility
                 mTestID = TCPHelper.CreateUserTestID(mPhone, mTestDate, mTestLocation);
                 TCPHelper.DisConnect();
             }
-            
         }
 
         /// <summary>
@@ -44,7 +43,7 @@ namespace ai.utility
         /// </summary>
         /// <param name="Answers"></param>
         /// <param name="Score"></param>
-        public void InputQuestionA(int[] Answers, double Score)
+        public void InputQuestionA(int[] Answers, int Score)
         {
             if (Answers == null)
                 return;
@@ -62,7 +61,7 @@ namespace ai.utility
                 TCPHelper.DisConnect();
             }
         }
-        public void InputQuestionB(int[] Answers, double Score)
+        public void InputQuestionB(int[] Answers, int Score)
         {
             if (Answers == null)
                 return;
@@ -80,10 +79,9 @@ namespace ai.utility
                 var result = TCPHelper.InputQuestionData(TCPHelper.QuestionType.QuestionB, mTestID, listAnswer, Score.ToString());
                 TCPHelper.DisConnect();
             }
-
-           
         }
-        public void InputQuestionC(int[] Answers, double Score)
+
+        public void InputQuestionC(int[] Answers, int Score)
         {
             if (Answers == null)
                 return;
@@ -223,8 +221,6 @@ namespace ai.utility
                 _IsConnected = false;
             }
         }
-
-
         internal static string CreateUserTestID(string Phone, string TestDate, string TestLocation)
         {
             string result = null;
@@ -246,7 +242,7 @@ namespace ai.utility
 
             return result;
         }
-
+         
         internal static string InputQuestionData(QuestionType Category, string TestId, List<string> Answer, string Score)
         {
             string result = null;

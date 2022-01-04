@@ -23,29 +23,29 @@
         <Image Margin="73,998,73,0" Source="/res/m3/a5.png" Stretch="Fill" Height="94" VerticalAlignment="Top"/>
 
         <Grid HorizontalAlignment="Left" Height="408" VerticalAlignment="Top" Width="56" Margin="111,666,0,0">
-            <RadioButton x:Name="btn0" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Margin="0,1,0,0" BorderThickness="0">
+            <RadioButton x:Name="btn0" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" HorizontalAlignment="Left" BorderBrush="{x:Null}" Margin="2,1,0,0" BorderThickness="0" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="btn1" RenderTransformOrigin="0.467,0.518" Height="14" Click="QnA" VerticalAlignment="Top" Margin="0,87,0,0" HorizontalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0">
+            <RadioButton x:Name="btn1" RenderTransformOrigin="0.467,0.518" Height="14" Click="QnA" VerticalAlignment="Top" Margin="1,88,0,0" HorizontalAlignment="Left" BorderBrush="{x:Null}" BorderThickness="0" Width="12" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="btn2" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" Margin="0,174,0,0" HorizontalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0">
+            <RadioButton x:Name="btn2" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" Margin="1,175,0,0" HorizontalAlignment="Left" BorderBrush="{x:Null}" BorderThickness="0" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="btn3" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" Margin="0,261,0,0" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" BorderThickness="0">
+            <RadioButton x:Name="btn3" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" Margin="1,262,0,0" HorizontalAlignment="Left" BorderBrush="{x:Null}" BorderThickness="0" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="btn4" HorizontalAlignment="Left" Margin="0,348,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.467,0.518" Click="QnA" BorderBrush="{x:Null}" Background="{x:Null}" BorderThickness="0">
+            <RadioButton x:Name="btn4" HorizontalAlignment="Left" Margin="1,349,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.467,0.518" Click="QnA" BorderBrush="{x:Null}" BorderThickness="0" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
         </Grid>

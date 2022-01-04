@@ -20,7 +20,7 @@ namespace ai
     /// </summary>
     public partial class start : Window
     {
-        utility.DBClient db = new utility.DBClient(); 
+        utility.DBClient db = new utility.DBClient();
 
         public start()
         {
@@ -83,7 +83,7 @@ namespace ai
                 file.WriteLine("");
                 file.WriteLine("UserSN : " + tb.Text);
             }
-            
+
             //DB
             db.InputUserInfo(tb.Text, DateTime.Now, "3M");
         }
@@ -92,78 +92,111 @@ namespace ai
         {
             Button btn = (Button)sender;
 
-            txtBox.Text += "010";
+            if (txtBox.Text.Length > 12)
+                txtBox.Text += "";
+            else
+                txtBox.Text += "010";
         }
 
         private void num1_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
-            
-            txtBox.Text += "1";
+
+            if (txtBox.Text.Length > 12)
+                txtBox.Text += "";
+            else
+                txtBox.Text += "1";
         }
 
         private void num2_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
 
-            txtBox.Text += "2";
+            if (txtBox.Text.Length > 12)
+                txtBox.Text += "";
+            else
+                txtBox.Text += "2";
 
         }
 
         private void num3_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
-            
-            txtBox.Text += "3";
+
+            if (txtBox.Text.Length > 12)
+                txtBox.Text += "";
+            else
+                txtBox.Text += "3";
         }
 
         private void num4_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
 
-            txtBox.Text += "4";
+            if (txtBox.Text.Length > 12)
+                txtBox.Text += "";
+            else
+                txtBox.Text += "4";
         }
 
         private void num5_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
 
-            txtBox.Text += "5";
+            if (txtBox.Text.Length > 12)
+                txtBox.Text += "";
+            else
+                txtBox.Text += "5";
         }
 
         private void num6_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
 
-            txtBox.Text += "6";
+            if (txtBox.Text.Length > 12)
+                txtBox.Text += "";
+            else
+                txtBox.Text += "6";
         }
 
         private void num7_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
 
-            txtBox.Text += "7";
+            if (txtBox.Text.Length > 12)
+                txtBox.Text += "";
+            else
+                txtBox.Text += "7";
         }
 
         private void num8_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
 
-            txtBox.Text += "8";
+            if (txtBox.Text.Length > 12)
+                txtBox.Text += "";
+            else
+                txtBox.Text += "8";
         }
 
         private void num9_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
 
-            txtBox.Text += "9";
+            if (txtBox.Text.Length > 12)
+                txtBox.Text += "";
+            else
+                txtBox.Text += "9";
         }
 
         private void num0_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
 
-            txtBox.Text += "0";
+            if (txtBox.Text.Length > 12)
+                txtBox.Text += "";
+            else
+                txtBox.Text += "0";
         }
 
         private void deleteBTN_Click(object sender, RoutedEventArgs e)

@@ -22,6 +22,8 @@ namespace ai
         bool query = false, All = false;
         String[] tmp = new String[5];
         int[] answer = new int[11];
+
+        start test = new start();
         public Page5_10(int[] data)
         {
             InitializeComponent();
@@ -120,12 +122,13 @@ namespace ai
         {
             int num = 0;
 
+            int[] An = new int[10];
+
             tmp[0] = btn0.IsChecked.ToString();
             tmp[1] = btn1.IsChecked.ToString();
             tmp[2] = btn2.IsChecked.ToString();
             tmp[3] = btn3.IsChecked.ToString();
             tmp[4] = btn4.IsChecked.ToString();
-
 
             for (int i = 0; i < 5; i++)
             {
@@ -139,11 +142,11 @@ namespace ai
             switch (num)
             {
                 case 0:
-                    answer[10] = 4;
+                    answer[10] = 0;
                     answer[0] += answer[10];
                     break;
                 case 1:
-                    answer[10] = 3;
+                    answer[10] = 1;
                     answer[0] += answer[10];
                     break;
                 case 2:
@@ -151,14 +154,17 @@ namespace ai
                     answer[0] += answer[10];
                     break;
                 case 3:
-                    answer[10] = 1;
+                    answer[10] = 3;
                     answer[0] += answer[10];
                     break;
                 case 4:
-                    answer[10] = 0;
+                    answer[10] = 4;
                     answer[0] += answer[10];
                     break;
             }
+
+            for (int i = 0; i < An.Length; i++)
+                An[i] = answer[i + 1];
 
             //CSV
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(@DateTime.Now.ToString("[AI실증_설문]yyyy-MM-dd") + ".csv", true, Encoding.UTF8))
@@ -175,6 +181,10 @@ namespace ai
                 }
                 file.WriteLine("{0},{1}", "Total", answer[0]);
             }
+
+            /* DB
+            start.db.InputQuestionC(An, answer[0]);
+            */
         }
     }
 }

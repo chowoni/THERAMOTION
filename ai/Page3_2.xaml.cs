@@ -27,6 +27,8 @@ namespace ai
         string[] arr = new string[5];
         int[] answer = new int[11]; //[0] : 3_1 총 점, [1] ~ [10] : 1~10 문항 답변
 
+        start test = new start();
+
         public Page3_2(int[] data)
         {
             InitializeComponent();
@@ -40,7 +42,7 @@ namespace ai
 
         private void Q_6_Checked(object sender, RoutedEventArgs e)
         {
-            if (T_6.IsChecked == true)
+            if (T_6.IsChecked == false)
             {
                 C6T.Visibility = Visibility.Visible;    
                 C6T.Source = new BitmapImage(new Uri(@"/res/checked.png", UriKind.Relative));
@@ -197,7 +199,6 @@ namespace ai
             }
         }
 
-
         private void previous_Click(object sender, RoutedEventArgs e)
         {
             for (int i = 0; i < 11; i++)
@@ -215,6 +216,7 @@ namespace ai
         private void next_Click(object sender, RoutedEventArgs e)
         {
             if(query6 && query7 && query8 && query9 && query10)
+
             {
                 All = true;
                 next.IsEnabled = true;
@@ -251,6 +253,8 @@ namespace ai
 
         private void btnTOscore()
         {
+            int[]  An = new int[10];
+
             arr[0] = T_6.IsChecked.ToString();
             arr[1] = T_7.IsChecked.ToString();
             arr[2] = T_8.IsChecked.ToString();
@@ -260,12 +264,14 @@ namespace ai
             for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i] == "True")
-                    answer[i+6] = 1;
-
+                    answer[i + 6] = 1;
                 total += answer[i+6];
             }
             total += answer[0];
 
+            for (int i = 0; i < An.Length; i++)
+                An[i] = answer[i + 1];
+            
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(@DateTime.Now.ToString("[AI실증_설문]yyyy-MM-dd") + ".csv", true, Encoding.UTF8))
             {
                 //필드 제목
@@ -280,7 +286,11 @@ namespace ai
                 file.WriteLine("{0},{1}", "Total", total);
             }
 
+            /* DB
+            start.db.InputQuestionA(An, total);
+            */
             return;
         }
     }
 }
+

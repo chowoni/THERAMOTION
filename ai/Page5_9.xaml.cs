@@ -139,11 +139,11 @@ namespace ai
             switch (num)
             {
                 case 0:
-                    answer[9] = 4;
+                    answer[9] = 0;
                     answer[0] += answer[9];
                     break;
                 case 1:
-                    answer[9] = 3;
+                    answer[9] = 1;
                     answer[0] += answer[9];
                     break;
                 case 2:
@@ -151,11 +151,11 @@ namespace ai
                     answer[0] += answer[9];
                     break;
                 case 3:
-                    answer[9] = 1;
+                    answer[9] = 3;
                     answer[0] += answer[9];
                     break;
                 case 4:
-                    answer[9] = 0;
+                    answer[9] = 4;
                     answer[0] += answer[9];
                     break;
             }

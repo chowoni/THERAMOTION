@@ -28,7 +28,6 @@ namespace ai
         bool ch1, ch2, ch3, ch4, ch5 = false;
 
         static int[] answer = new int[6];
-
         public Page3_1()
         {
             InitializeComponent();
@@ -37,7 +36,7 @@ namespace ai
         }
         private void Q_1_Checked(object sender, RoutedEventArgs e)
         {
-            if (T_1.IsChecked == true)
+            if (T_1.IsChecked == false)
             {
                 C1T.Visibility = Visibility.Visible;
                 C1T.Source = new BitmapImage(new Uri(@"/res/checked.png", UriKind.Relative));
@@ -62,10 +61,8 @@ namespace ai
                 i++;
 
                 cnt.Text = "0" + i.ToString();
-
                 ch1 = true;
             }
-
         }
 
         private void Q_2_Checked(object sender, RoutedEventArgs e)
@@ -157,7 +154,6 @@ namespace ai
                 ch4 = true;
             }
         }
-
         private void Q_5_Checked(object sender, RoutedEventArgs e)
         {
             if (T_5.IsChecked == true)
@@ -186,8 +182,6 @@ namespace ai
                 ch5 = true;
             }
         }
-
-
         private void next_Click(object sender, RoutedEventArgs e)
         {
             if (query1 && query2 && query3 && query4 && query5)
@@ -204,7 +198,6 @@ namespace ai
                 next.IsEnabled = true;
                 All = false;
             }
-
 
             if (next.IsEnabled == true && All == true)
             {
@@ -226,8 +219,6 @@ namespace ai
 
             query5 = (F_5.IsChecked == true) || (T_5.IsChecked == true);
         }
-
-
         private void btnTOscore()
         {
             int total = 0;

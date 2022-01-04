@@ -4,8 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ai"
-        mc:Ignorable="d"
-        Title="Page4" Height="1920" Width="1080" WindowStyle="None" WindowState="Maximized">
+        mc:Ignorable="d" Title="Page4" Height="1920" Width="1080" WindowStyle="None" WindowState="Maximized">
     <Grid>
         <Grid.Background>
             <ImageBrush Stretch="UniformToFill" ImageSource= "/res/bg.png" AlignmentY="Top" AlignmentX="Center"/>
@@ -21,24 +20,24 @@
 
         <Image Margin="30,466,30,658" Source="/res/T2_bg.png" Stretch="Fill"/>
         <Grid HorizontalAlignment="Left" Height="349" VerticalAlignment="Top" Width="54" Margin="107,725,0,0">
-            <RadioButton x:Name="btn0" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" BorderThickness="00">
+            <RadioButton x:Name="btn0" RenderTransformOrigin="0.5,0.521" Click="QnA" VerticalAlignment="Top" HorizontalAlignment="Left" BorderBrush="{x:Null}" BorderThickness="00" Width="12" Height="12" Margin="1,0,0,0" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="btn1" RenderTransformOrigin="0.467,0.518" Height="14" Click="QnA" VerticalAlignment="Top" Margin="0,96,0,0" HorizontalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="00">
+            <RadioButton x:Name="btn1" RenderTransformOrigin="0.467,0.518" Height="12" Click="QnA" VerticalAlignment="Top" Margin="1,97,0,0" HorizontalAlignment="Left" BorderBrush="{x:Null}" BorderThickness="00" Width="12" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="btn2" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" Margin="0,182,0,0" HorizontalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="00">
+            <RadioButton x:Name="btn2" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" Margin="1,184,0,0" HorizontalAlignment="Left" BorderBrush="{x:Null}" BorderThickness="00" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="btn3" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" Margin="0,274,0,0" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" BorderThickness="00">
+            <RadioButton x:Name="btn3" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" Margin="1,275,0,0" HorizontalAlignment="Left" BorderBrush="{x:Null}" BorderThickness="00" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
         </Grid>
@@ -46,7 +45,7 @@
         <Image x:Name="a2" Margin="78,811,86,1033" Stretch="Fill"/>
         <Image x:Name="a3" Margin="78,896,86,948" Stretch="Fill"/>
         <Image x:Name="a4" Margin="78,989,86,855" Stretch="Fill"/>
-
+        
         <TextBlock TextWrapping="Wrap"  Foreground="#FF666666" FontFamily="Pretendard Medium" FontSize="32" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="191,733,0,0"><Run Text="1. 전혀 방해받지 않았다"/><Run Language="ko-kr" Text="."/></TextBlock>
         <TextBlock TextWrapping="Wrap" Text="2. 며칠 동안 방해 받았다."  Foreground="#FF666666" FontFamily="Pretendard Medium" FontSize="32" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="191,831,0,0"/>
         <TextBlock TextWrapping="Wrap" Text="3. 2주 중 절반 이상 방해 받았다."  Foreground="#FF666666" FontFamily="Pretendard Medium" FontSize="32" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="191,916,0,0"/>

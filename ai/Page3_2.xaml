@@ -61,12 +61,12 @@
 
         <Grid HorizontalAlignment="Left" Height="54" Margin="118,577,0,0" VerticalAlignment="Top" Width="866">
             <TextBlock TextWrapping="Wrap" Text="6. 큰 불만 없이 생활했다." Foreground="#FF666666" FontFamily="Pretendard" FontSize="32" VerticalAlignment="Top" Margin="0,10,0,0" HorizontalAlignment="Left" Width="572" Height="32"/>
-            <RadioButton x:Name="F_6" RenderTransformOrigin="0.467,0.518" Click="QnA" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="800,1,0,0" HorizontalAlignment="Left" Checked="Q_6_Checked" BorderThickness="00">
+            <RadioButton x:Name="F_6" RenderTransformOrigin="0.467,0.518" Click="QnA" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="679,4,0,0" HorizontalAlignment="Left" Checked="Q_6_Checked" BorderThickness="00" Width="12" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
                     <ScaleTransform ScaleX="4" ScaleY="4" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="T_6" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Margin="675,0,0,0" HorizontalAlignment="Left" Checked="Q_6_Checked" BorderThickness="00">
+            <RadioButton x:Name="T_6" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="803,4,0,0" HorizontalAlignment="Left" Checked="Q_6_Checked" BorderThickness="00" Height="12" Width="12" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
                     <ScaleTransform ScaleX="4" ScaleY="4" />
                 </RadioButton.LayoutTransform>
@@ -80,12 +80,12 @@
         </Grid>
         <Grid HorizontalAlignment="Left" Height="54" Margin="118,668,0,0" VerticalAlignment="Top" Width="874">
             <TextBlock TextWrapping="Wrap" Text="7. 사람들이 나에게 차갑게 대하는 것 같았다." Foreground="#FF666666" FontFamily="Pretendard Medium" FontSize="32" VerticalAlignment="Top" Margin="0,10,0,0" HorizontalAlignment="Left" Width="572" Height="32"/>
-            <RadioButton x:Name="F_7" RenderTransformOrigin="0.467,0.518" Click="QnA" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="800,1,0,0" HorizontalAlignment="Left" Checked="Q_7_Checked" BorderThickness="00">
+            <RadioButton x:Name="F_7" RenderTransformOrigin="0.467,0.518" Click="QnA" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="803,5,0,0" HorizontalAlignment="Left" Checked="Q_7_Checked" BorderThickness="00" Width="12" Height="12" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
                     <ScaleTransform ScaleX="4" ScaleY="4" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="T_7" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Margin="675,0,0,0" HorizontalAlignment="Left" Checked="Q_7_Checked" BorderThickness="00">
+            <RadioButton x:Name="T_7" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="679,5,0,0" HorizontalAlignment="Left" Checked="Q_7_Checked" BorderThickness="00" Width="12" Height="12" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
                     <ScaleTransform ScaleX="4" ScaleY="4" />
                 </RadioButton.LayoutTransform>
@@ -99,12 +99,12 @@
         </Grid>
         <Grid HorizontalAlignment="Left" Height="54" Margin="118,760,0,0" VerticalAlignment="Top" Width="874">
             <TextBlock TextWrapping="Wrap" Text="8. 마음이 슬펐다." Foreground="#FF666666" FontFamily="Pretendard Medium" FontSize="32" VerticalAlignment="Top" Margin="0,10,0,0" HorizontalAlignment="Left" Width="572" Height="32"/>
-            <RadioButton x:Name="F_8" RenderTransformOrigin="0.467,0.518" Click="QnA" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="800,1,0,0" HorizontalAlignment="Left" Checked="Q_8_Checked" BorderThickness="00">
+            <RadioButton x:Name="F_8" RenderTransformOrigin="0.467,0.518" Click="QnA" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="803,5,0,0" HorizontalAlignment="Left" Checked="Q_8_Checked" BorderThickness="00" Width="12" Height="12" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
                     <ScaleTransform ScaleX="4" ScaleY="4" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="T_8" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Margin="675,0,0,0" HorizontalAlignment="Left" Checked="Q_8_Checked" BorderThickness="00">
+            <RadioButton x:Name="T_8" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="679,5,0,0" HorizontalAlignment="Left" Checked="Q_8_Checked" BorderThickness="00" Width="12" Height="12" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
                     <ScaleTransform ScaleX="4" ScaleY="4" />
                 </RadioButton.LayoutTransform>
@@ -118,12 +118,12 @@
         </Grid>
         <Grid HorizontalAlignment="Left" Height="54" Margin="118,852,0,0" VerticalAlignment="Top" Width="874">
             <TextBlock TextWrapping="Wrap" Text="9. 사람들이 나를 싫어하는 것 같았다." Foreground="#FF666666" FontFamily="Pretendard Medium" FontSize="32" VerticalAlignment="Top" Margin="0,10,0,0" HorizontalAlignment="Left" Width="572" Height="32"/>
-            <RadioButton x:Name="F_9" RenderTransformOrigin="0.467,0.518" Click="QnA" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="800,1,0,0" HorizontalAlignment="Left" Checked="Q_9_Checked" BorderThickness="00">
+            <RadioButton x:Name="F_9" RenderTransformOrigin="0.467,0.518" Click="QnA" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="803,5,0,0" HorizontalAlignment="Left" Checked="Q_9_Checked" BorderThickness="00" Width="12" Height="12" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
                     <ScaleTransform ScaleX="4" ScaleY="4" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="T_9" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Margin="675,0,0,0" HorizontalAlignment="Left" Checked="Q_9_Checked" BorderThickness="00">
+            <RadioButton x:Name="T_9" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="679,5,0,0" HorizontalAlignment="Left" Checked="Q_9_Checked" BorderThickness="00" Width="12" Height="12" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
                     <ScaleTransform ScaleX="4" ScaleY="4" />
                 </RadioButton.LayoutTransform>
@@ -137,12 +137,12 @@
         </Grid>
         <Grid HorizontalAlignment="Left" Height="54" Margin="118,944,0,0" VerticalAlignment="Top" Width="874">
             <TextBlock TextWrapping="Wrap" Text="10. 도무지 뭘 해 나갈 엄두가 나지 않았다." Foreground="#FF666666" FontFamily="Pretendard Medium" FontSize="32" VerticalAlignment="Top" Margin="0,10,0,0" HorizontalAlignment="Left" Width="572" Height="32"/>
-            <RadioButton x:Name="F_10" RenderTransformOrigin="0.467,0.518" Click="QnA" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="800,1,0,0" HorizontalAlignment="Left" Checked="Q_10_Checked" BorderThickness="00">
+            <RadioButton x:Name="F_10" RenderTransformOrigin="0.467,0.518" Click="QnA" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="803,5,0,0" HorizontalAlignment="Left" Checked="Q_10_Checked" BorderThickness="00" Width="12" Height="12" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
                     <ScaleTransform ScaleX="4" ScaleY="4" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="T_10" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" Background="{x:Null}" VerticalAlignment="Top" Margin="675,0,0,0" HorizontalAlignment="Left" Checked="Q_10_Checked" BorderThickness="00">
+            <RadioButton x:Name="T_10" RenderTransformOrigin="2.3,1.107" Click="QnA" BorderBrush="{x:Null}" VerticalAlignment="Top" Margin="679,5,0,0" HorizontalAlignment="Left" Checked="Q_10_Checked" BorderThickness="00" Width="12" Height="12" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
                     <ScaleTransform ScaleX="4" ScaleY="4" />
                 </RadioButton.LayoutTransform>

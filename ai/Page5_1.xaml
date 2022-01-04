@@ -31,29 +31,29 @@
         <Image Margin="73,998,73,0" Source="/res/m3/a5.png" Stretch="Fill" Height="94" VerticalAlignment="Top"/>
 
         <Grid HorizontalAlignment="Left" Height="408" VerticalAlignment="Top" Width="56" Margin="111,666,0,0">
-            <RadioButton x:Name="btn0" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Margin="0,1,0,0" BorderThickness="0">
+            <RadioButton x:Name="btn0" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" HorizontalAlignment="Left" BorderBrush="{x:Null}" Margin="2,1,0,0" BorderThickness="0" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="btn1" RenderTransformOrigin="0.467,0.518" Height="14" Click="QnA" VerticalAlignment="Top" Margin="0,87,0,0" HorizontalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0">
+            <RadioButton x:Name="btn1" RenderTransformOrigin="0.467,0.518" Height="14" Click="QnA" VerticalAlignment="Top" Margin="1,88,0,0" HorizontalAlignment="Left" BorderBrush="{x:Null}" BorderThickness="0" Width="12" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="btn2" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" Margin="0,174,0,0" HorizontalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0">
+            <RadioButton x:Name="btn2" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" Margin="1,175,0,0" HorizontalAlignment="Left" BorderBrush="{x:Null}" BorderThickness="0" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="btn3" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" Margin="0,261,0,0" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" BorderThickness="0">
+            <RadioButton x:Name="btn3" RenderTransformOrigin="0.467,0.518" Click="QnA" VerticalAlignment="Top" Margin="1,262,0,0" HorizontalAlignment="Left" BorderBrush="{x:Null}" BorderThickness="0" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
-            <RadioButton x:Name="btn4" HorizontalAlignment="Left" Margin="0,348,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.467,0.518" Click="QnA" BorderBrush="{x:Null}" Background="{x:Null}" BorderThickness="0">
+            <RadioButton x:Name="btn4" HorizontalAlignment="Left" Margin="1,349,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.467,0.518" Click="QnA" BorderBrush="{x:Null}" BorderThickness="0" Background="{x:Null}">
                 <RadioButton.LayoutTransform>
-                    <ScaleTransform ScaleX="4" ScaleY="4" />
+                    <ScaleTransform ScaleX="4.5" ScaleY="4.5" />
                 </RadioButton.LayoutTransform>
             </RadioButton>
         </Grid>
@@ -65,7 +65,7 @@
         <Image x:Name="a5" Margin="83,1003,81,841" Stretch="Fill"/>
 
         <Image Margin="0,509,49,0" Source="/res/T2_Cbg.png" Stretch="Fill" HorizontalAlignment="Right" Width="991" Height="120" VerticalAlignment="Top"/>
-        
+
         <TextBlock LineHeight="50" Margin="0,523,134,0" TextWrapping="Wrap" Foreground="#FF4C7A7A" FontFamily="Pretendard" FontSize="35"  TextAlignment="Center"  FontWeight="Bold" HorizontalAlignment="Right" Width="820" Height="91" VerticalAlignment="Top" ><Run Text="Q.최근 1개월 동안, "/><Run Language="ko-kr" Text="예상치 못했던 일 때문에"/><LineBreak/><Run Language="ko-kr" Text="당황했던 적이 얼마나 있었습니까?"/></TextBlock>
         <Image Margin="192,672,316,0" Source="/res/m3/a1.png" Stretch="Fill" Height="38" VerticalAlignment="Top"/>
 

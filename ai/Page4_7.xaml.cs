@@ -22,6 +22,9 @@ namespace ai
         bool query = false, All = false;
         String[] tmp = new String[5];
         int[] answer = new int[8]; //index 0 : 총 합, 1~8 : 개별 문항에 대한 점수
+
+        start test = new start();
+
         public Page4_7(int[] data)
         {
             InitializeComponent();
@@ -104,8 +107,10 @@ namespace ai
         }
         private void btnTOscore()
         {
-            int total = answer[0];
             int num = 0;
+            
+
+            int[] An = new int[7];
 
             tmp[1] = btn0.IsChecked.ToString();
             tmp[2] = btn1.IsChecked.ToString();
@@ -142,6 +147,10 @@ namespace ai
                     break;
             }
 
+            for (int i = 0; i < An.Length; i++)
+                An[i] = answer[i + 1];
+
+
             //CSV
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(@DateTime.Now.ToString("[AI실증_설문]yyyy-MM-dd") + ".csv", true, Encoding.UTF8))
             {
@@ -157,6 +166,10 @@ namespace ai
                 }
                 file.WriteLine("{0},{1}", "Total", answer[0]);
             }
+
+            /* DB
+            start.db.InputQuestionB(An, answer[0]);
+            */
         }
     }
 }
