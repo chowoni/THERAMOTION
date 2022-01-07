@@ -89,7 +89,7 @@ namespace ai
                 Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() =>
                 {
                     var converted = Convert(BitmapConverter.ToBitmap(matImage));
-                    kinnect.Source = converted;
+                    //kinnect.Source = converted;
                 }));
             }
         }

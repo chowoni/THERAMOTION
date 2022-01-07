@@ -31,8 +31,6 @@
         <Image x:Name="kinnect" HorizontalAlignment="Right" Height="1247" Margin="0,453,45,0" VerticalAlignment="Top" Width="693" Stretch="UniformToFill"/>
         <Image Margin="75,815,0,0" Source="/res/str/guide2.png" Stretch="Fill" HorizontalAlignment="Left" Width="222" Height="892" VerticalAlignment="Top"/>
 
-        <Image Margin="0,603,186,0" Source="/res/str/guide3.png" Stretch="Fill" HorizontalAlignment="Right" Width="382" Height="1073" VerticalAlignment="Top"/>
-        
         <Image Margin="0,1084,3,0" Source="/res/next.png" Stretch="Fill" Height="90" VerticalAlignment="Top" HorizontalAlignment="Right" Width="186"/>
         <Button x:Name="next" Margin="0,1088,20,0" FontSize="35" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold Condensed" Height="72" Click="next_Click" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="White" Opacity="0" HorizontalAlignment="Right" Width="161" />
 

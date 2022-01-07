@@ -26,9 +26,9 @@ namespace ai
 
         private void next_Click(object sender, RoutedEventArgs e)
         {
-            ai.start ChangeWInow = new ai.start();
-
-            ChangeWInow.Show();
+            Application.Current.Shutdown(); 
+            
+           //Application.Restart();
         }
     }
 }

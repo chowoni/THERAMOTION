@@ -119,6 +119,8 @@ namespace ai
             ai.Page8_4 ChangeWInow = new ai.Page8_4();
 
             ChangeWInow.Show();
+
+            capCamera.Dispose();
         }
 
         private void restart_Click(object sender, RoutedEventArgs e)

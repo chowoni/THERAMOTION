@@ -115,10 +115,13 @@ namespace ai
         private void next_Click(object sender, RoutedEventArgs e)
         {
             loop = false;
+            capCamera.Dispose();
 
             ai.Page8_3 ChangeWInow = new ai.Page8_3();
 
             ChangeWInow.Show();
+
+            capCamera.Dispose();
         }
 
         private void restart_Click(object sender, RoutedEventArgs e)

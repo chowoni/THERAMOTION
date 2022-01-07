@@ -32,7 +32,6 @@ namespace ai
         {
             nextBTN.IsEnabled = true;
             CB1.IsChecked = true;
-
         }
 
         private void nextBTN_Click(object sender, RoutedEventArgs e)
@@ -85,7 +84,8 @@ namespace ai
             }
 
             //DB
-            db.InputUserInfo(tb.Text, DateTime.Now, "3M");
+            string num = tb.Text.Replace("-", "");
+            db.InputUserInfo(num, DateTime.Now, "3M");
         }
 
         private void num010_Click(object sender, RoutedEventArgs e)

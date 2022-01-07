@@ -21,10 +21,10 @@
         <Image x:Name="imgViewport" Margin="40,470,0,0" Stretch="UniformToFill" HorizontalAlignment="Left" Width="990" Height="608" VerticalAlignment="Top"/>
 
         <Image Source="/res/face/gBG.png" Stretch="Fill" Width="856" Height="856" VerticalAlignment="Top" Margin="0,1141,0,0" HorizontalAlignment="Center"/>
-        <Image Source="/res/face/face1.png" Stretch="Fill" Height="418" Width="866" VerticalAlignment="Top" Margin="0,1293,0,0" HorizontalAlignment="Center"/>
+        <Image Source="/res/face/face1.png" Stretch="Fill" Width="866" Margin="0,1293,0,209" HorizontalAlignment="Center"/>
 
         <Image Margin="0,0,0,120" Source="/res/face/text-bg.png" Stretch="Fill" HorizontalAlignment="Center" Width="858" Height="92" VerticalAlignment="Bottom"/>
-        <TextBlock Margin="252,1729,252,0" TextWrapping="Wrap" Text="실루엣에 맞춰 '무표정'을 지어주세요." VerticalAlignment="Top" FontFamily="Pretendard" FontSize="37" Foreground="#FF222222" FontWeight="Bold" Height="44" TextAlignment="Center"/>
+        <TextBlock Margin="252,1729,252,147" TextWrapping="Wrap" Text="실루엣에 맞춰 '무표정'을 지어주세요." FontFamily="Pretendard" FontSize="37" Foreground="#FF222222" FontWeight="Bold" TextAlignment="Center"/>
 
         <Image Margin="0,1127,81,0" Source="/res/next.png" Stretch="Fill" Height="90" VerticalAlignment="Top" HorizontalAlignment="Right" Width="186"/>
         <Image x:Name="dis" Margin="820,1134,98,720" Stretch="Fill"/>
@@ -34,7 +34,7 @@
 
         <Image x:Name="reImg" Margin="81,1127,0,0" Source="/res/face/reBTN.png" Stretch="Fill" HorizontalAlignment="Left" Width="162" Height="66" VerticalAlignment="Top"/>
         <Button x:Name="restart" Margin="0,1127,837,0" FontSize="35" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold Condensed" Height="66" Click="restart_Click" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="White" Opacity="0" HorizontalAlignment="Right" Width="162" />
-        <Image Margin="0,582,0,0" Source="/res/face/guide_f.png" Stretch="Fill" HorizontalAlignment="Center" Width="404" Height="404" VerticalAlignment="Top"/>
+        <Image Margin="0,0,0,0" Source="/res/face/guide_f.png" Stretch="Fill"  Width="404" Height="404"/>
 
         <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Width="148" Margin="0,1087,0,0">
             <Image Source="/res/str/cnt_bg2.png" Stretch="Fill" HorizontalAlignment="Center" Width="147" Height="147" VerticalAlignment="Top"/>
