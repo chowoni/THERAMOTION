@@ -7,6 +7,8 @@ using System.Windows;
 using System.Diagnostics;
 using System.IO;
 
+using ai_ucversion.UserControls;
+
 using OpenCvSharp;
 using OpenCvSharp.Extensions;
 
@@ -71,12 +73,43 @@ namespace ai_ucversion
                     break;
             }
         }
+
+        WebCamVeiwport webCamVeiwport;
         private void init_P8_1()
         {
             mainCanvas.Children.Clear();
             Page8_1 = new UserControls.Page8_1(this);
             mainCanvas.Children.Add(Page8_1);
             Page8_1.NextClick += NextClickEvent;
+            Page8_1.CaptureEvent += CaptureEvent;
+
+            camCanvas.Children.Clear();
+            webCamVeiwport = new WebCamVeiwport();
+            webCamVeiwport.Visibility = Visibility.Visible;
+            camCanvas.Children.Add(webCamVeiwport);
+            webCamVeiwport.CamStart();
+
+        }
+
+        private void CaptureEvent(object? sender, EventArgs e)
+        {
+            switch (sender as System.Windows.Controls.UserControl)
+            {
+                case UserControls.Page8_1:
+                    webCamVeiwport.Capture(0);
+                    break;
+                case UserControls.Page8_2:
+                    webCamVeiwport.Capture(1);
+                    break;
+                case UserControls.Page8_3:
+                    webCamVeiwport.Capture(2);
+                    break;
+                case UserControls.Page8_4:
+                    webCamVeiwport.Capture(3);
+                    webCamVeiwport.CamStop();
+                    break;
+            }
+            
         }
 
         private void init_P8_2()
@@ -85,6 +118,9 @@ namespace ai_ucversion
             Page8_2 = new UserControls.Page8_2(this);
             mainCanvas.Children.Add(Page8_2);
             Page8_2.NextClick += NextClickEvent;
+            Page8_2.CaptureEvent += CaptureEvent;
+
+
         }
         private void init_P8_3()
         {
@@ -92,6 +128,7 @@ namespace ai_ucversion
             Page8_3 = new UserControls.Page8_3(this);
             mainCanvas.Children.Add(Page8_3);
             Page8_3.NextClick += NextClickEvent;
+            Page8_3.CaptureEvent += CaptureEvent;
         }
         private void init_P8_4()
         {
@@ -99,6 +136,7 @@ namespace ai_ucversion
             Page8_4 = new UserControls.Page8_4(this);
             mainCanvas.Children.Add(Page8_4);
             Page8_4.NextClick += NextClickEvent;
+            Page8_4.CaptureEvent += CaptureEvent;
         }
 
         private void NextClickEvent(object sender, EventArgs e)

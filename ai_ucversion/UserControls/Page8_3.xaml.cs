@@ -8,8 +8,8 @@ using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
 
-using OpenCvSharp;
-using OpenCvSharp.Extensions;
+//using OpenCvSharp;
+//using OpenCvSharp.Extensions;
 
 namespace ai_ucversion.UserControls
 {
@@ -18,11 +18,11 @@ namespace ai_ucversion.UserControls
     /// </summary>
     public partial class Page8_3 : UserControl
     {
-        VideoCapture capCamera;
+        //VideoCapture capCamera;
         DispatcherTimer timer = new DispatcherTimer();
         bool loop = false;
 
-        Mat matImage = new Mat();
+        //Mat matImage = new Mat();
         MainWindow main;
 
         public Page8_3(MainWindow mw)
@@ -39,7 +39,7 @@ namespace ai_ucversion.UserControls
 
         private void InitializeCamera()
         {
-            capCamera = VideoCapture.FromCamera(0);
+            //capCamera = VideoCapture.FromCamera(0);
             ready();
         }
 
@@ -48,7 +48,7 @@ namespace ai_ucversion.UserControls
             //음성 출력
             //new Thread(PlayCamera).Start();
 
-            Task.Run(PlayCamera);
+            //Task.Run(PlayCamera);
 
             timer.Interval = TimeSpan.FromMilliseconds(1000);
 
@@ -84,8 +84,11 @@ namespace ai_ucversion.UserControls
             timer.Stop();
 
             //캡쳐 함수 호출
-            main.capture_Img(num, capCamera, matImage);
+            //main.capture_Img(num, capCamera, matImage);
+            CaptureEvent?.Invoke(this, e);
         }
+
+        public event EventHandler CaptureEvent;
 
         //private void capture_Img() //캡쳐, 저장
         //{
@@ -93,38 +96,38 @@ namespace ai_ucversion.UserControls
         //    matImage.SaveImage(@"C:\Users\Kwon Cho Won\Desktop\capImg\" + save_name + "_basic.jpg");
         //}
 
-        private void PlayCamera()
-        {
-            loop = true;
-            while (loop)
-            {
-                capCamera.Read(matImage); // same as cvQueryFrame
-                if (matImage.Empty()) break;
-                //Thread.Sleep(sleepTime);
-                //Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() =>
-                //{
-                //    //var converted = Convert(BitmapConverter.ToBitmap(matImage));
-                //    //imgViewport.Source = converted;
-                //}));
+        //private void PlayCamera()
+        //{
+        //    loop = true;
+        //    while (loop)
+        //    {
+        //        capCamera.Read(matImage); // same as cvQueryFrame
+        //        if (matImage.Empty()) break;
+        //        //Thread.Sleep(sleepTime);
+        //        //Dispatcher.BeginInvoke(DispatcherPriority.Normal, new Action(() =>
+        //        //{
+        //        //    //var converted = Convert(BitmapConverter.ToBitmap(matImage));
+        //        //    //imgViewport.Source = converted;
+        //        //}));
 
-                Dispatcher.Invoke(DispatcherPriority.Normal, new Action(() =>
-                {
-                    var converted = Convert(BitmapConverter.ToBitmap(matImage));
-                    imgViewport.Source = converted;
-                }));
-            }
-        }
-        public BitmapImage Convert(Bitmap src)
-        {
-            MemoryStream ms = new MemoryStream();
-            ((System.Drawing.Bitmap)src).Save(ms, System.Drawing.Imaging.ImageFormat.Bmp);
-            BitmapImage image = new BitmapImage();
-            image.BeginInit();
-            ms.Seek(0, SeekOrigin.Begin);
-            image.StreamSource = ms;
-            image.EndInit();
-            return image;
-        }
+        //        Dispatcher.Invoke(DispatcherPriority.Normal, new Action(() =>
+        //        {
+        //            var converted = Convert(BitmapConverter.ToBitmap(matImage));
+        //            imgViewport.Source = converted;
+        //        }));
+        //    }
+        //}
+        //public BitmapImage Convert(Bitmap src)
+        //{
+        //    MemoryStream ms = new MemoryStream();
+        //    ((System.Drawing.Bitmap)src).Save(ms, System.Drawing.Imaging.ImageFormat.Bmp);
+        //    BitmapImage image = new BitmapImage();
+        //    image.BeginInit();
+        //    ms.Seek(0, SeekOrigin.Begin);
+        //    image.StreamSource = ms;
+        //    image.EndInit();
+        //    return image;
+        //}
 
         public event EventHandler NextClick;
 
@@ -133,7 +136,7 @@ namespace ai_ucversion.UserControls
             loop = false;
             NextClick?.Invoke(sender, e);
 
-            capCamera.Dispose();
+            //capCamera.Dispose();
         }
 
         private void restart_Click(object sender, RoutedEventArgs e)

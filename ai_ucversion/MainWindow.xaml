@@ -4,9 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ai_ucversion"
+        xmlns:uc ="clr-namespace:ai_ucversion.UserControls"
+        
         mc:Ignorable="d"
         Title="MainWindow" Height="1920" Width="1080" WindowState="Maximized" WindowStyle="None">
-    <Grid x:Name="mainCanvas">
 
+    <Grid>
+        <Grid x:Name="mainCanvas">
+
+
+        </Grid>
+        <Grid x:Name="camCanvas" Background="Blue" Margin="40,-350,0,0" Width="990" Height="608" Visibility="Visible">
+
+        </Grid>
     </Grid>
+   
 </Window>
