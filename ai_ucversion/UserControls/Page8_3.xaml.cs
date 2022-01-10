@@ -133,10 +133,7 @@ namespace ai_ucversion.UserControls
 
         private void next_Click(object sender, RoutedEventArgs e)
         {
-            loop = false;
             NextClick?.Invoke(sender, e);
-
-            //capCamera.Dispose();
         }
 
         private void restart_Click(object sender, RoutedEventArgs e)

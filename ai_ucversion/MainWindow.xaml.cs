@@ -26,6 +26,13 @@ namespace ai_ucversion
         UserControls.Page8_3 Page8_3; //슬픈 표정
         UserControls.Page8_4 Page8_4; //화난 표정
 
+        UserControls.Page11_1 Page11_1; //정면
+        UserControls.Page11_2 Page11_2; //측면
+        UserControls.Page11_3 Page11_3; //천추 위치 안내
+        UserControls.Page11_4 Page11_4; //천추 선택
+
+        public utility.DBClient db = new utility.DBClient();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -51,7 +58,7 @@ namespace ai_ucversion
             set { _TotalPage = value; }
         }
 
-        private void NextPage(int page)
+        public void NextPage(int page)
         {
             mainCanvas.Children.Clear();
 
@@ -70,6 +77,18 @@ namespace ai_ucversion
                     break;
                 case 3:
                     init_P8_4();
+                    break;
+                case 4:
+                    init_P11_1();
+                    break;
+                case 5:
+                    init_P11_2();
+                    break;
+                case 6:
+                    init_P11_3();
+                    break;
+                case 7:
+                    init_P11_4();
                     break;
             }
         }
@@ -137,6 +156,36 @@ namespace ai_ucversion
             mainCanvas.Children.Add(Page8_4);
             Page8_4.NextClick += NextClickEvent;
             Page8_4.CaptureEvent += CaptureEvent;
+        }
+
+        private void init_P11_1()
+        {
+            mainCanvas.Children.Clear();
+            Page11_1 = new UserControls.Page11_1(this);
+            mainCanvas.Children.Add(Page11_1);
+            Page11_1.NextClick += NextClickEvent;
+        }
+        private void init_P11_2()
+        {
+            mainCanvas.Children.Clear();
+            Page11_2 = new UserControls.Page11_2(this);
+            mainCanvas.Children.Add(Page11_2);
+            Page11_2.NextClick += NextClickEvent;
+        }
+
+        private void init_P11_3()
+        {
+            mainCanvas.Children.Clear();
+            Page11_3 = new UserControls.Page11_3(this);
+            mainCanvas.Children.Add(Page11_3);
+            Page11_3.NextClick += NextClickEvent;
+        }
+        private void init_P11_4()
+        {
+            mainCanvas.Children.Clear();
+            Page11_4 = new UserControls.Page11_4(this);
+            mainCanvas.Children.Add(Page11_4);
+            Page11_4.NextClick += NextClickEvent;
         }
 
         private void NextClickEvent(object sender, EventArgs e)

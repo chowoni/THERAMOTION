@@ -133,15 +133,7 @@ namespace ai_ucversion.UserControls
 
         private void next_Click(object sender, RoutedEventArgs e)
         {
-            loop = false;
-
             NextClick?.Invoke(sender, e);
-
-            //ai.Page8_2 ChangeWInow = new ai.Page8_2();
-
-            //ChangeWInow.Show();
-
-            //capCamera.Dispose();
         }
 
         private void restart_Click(object sender, RoutedEventArgs e)

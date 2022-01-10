@@ -22,7 +22,6 @@ namespace ai_ucversion.UserControls
         DispatcherTimer timer = new DispatcherTimer();
         bool loop = false;
 
-        //Mat matImage = new Mat();
         MainWindow main;
 
         public Page8_1(MainWindow mw)
@@ -39,21 +38,25 @@ namespace ai_ucversion.UserControls
 
         private void InitializeCamera()
         {
-            //capCamera = VideoCapture.FromCamera(0);
+            timer.Interval = TimeSpan.FromMilliseconds(5000);
+
+            timer.Tick += Timer_delay;
+            timer.Start();
+
             ready();
+        }
+
+        private void Timer_delay(object sender, System.EventArgs e)
+        {
+            timer.Tick += Timer_Tick3;
+            timer.Start();
         }
 
         private void ready()
         {
-            //음성 출력
-            //new Thread(PlayCamera).Start();
-
-            //Task.Run(PlayCamera);
-
             timer.Interval = TimeSpan.FromMilliseconds(1000);
 
             cnt.Text = "3";
-
             timer.Tick += Timer_Tick3;
             timer.Start();
         }
@@ -86,8 +89,6 @@ namespace ai_ucversion.UserControls
             int num = 0;
             timer.Stop();
 
-            //캡쳐 함수 호출
-            //main.capture_Img(num, capCamera, matImage);
             CaptureEvent?.Invoke(this, e);
         }
 
@@ -133,21 +134,12 @@ namespace ai_ucversion.UserControls
         //    return image;
         //}
 
-        public event EventHandler NextClick; 
+        public event EventHandler NextClick;
 
         private void next_Click(object sender, RoutedEventArgs e)
         {
-            loop = false;
-
             NextClick?.Invoke(sender, e);
-
-            //ai.Page8_2 ChangeWInow = new ai.Page8_2();
-
-            //ChangeWInow.Show();
-
-            //capCamera.Dispose();
         }
-
         private void restart_Click(object sender, RoutedEventArgs e)
         {
             disR.Source = new BitmapImage(new Uri(@"/res/disable.png", UriKind.Relative));
